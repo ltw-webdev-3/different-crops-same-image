@@ -1,0 +1,20 @@
+html {
+  font-family: Georgia, serif;
+}
+
+.banner {
+  color: #fff;
+  text-shadow: .1em .1em .3em rgba(0, 0, 0, .8);
+}
+
+.banner-btn {
+  border-color: #fff;
+  color: #fff;
+  text-shadow: none;
+}
+
+.banner-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}

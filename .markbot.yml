@@ -1,0 +1,30 @@
+repo: 'different-crops-same-image'
+canvasCourse: 'web-dev-3'
+
+inherit:
+  - naming-restrict-live
+  - git-1
+  - html
+  - screenshots-all
+
+html:
+  - path: 'index.html'
+    has:
+      - 'div.banner.relative > picture.img-flex > source:nth-child(2)'
+      - 'div.banner.relative > picture.img-flex > img:last-child'
+      - 'div.banner > picture + div.absolute.pin-lb.island-1-2.max-length > h1 + p + a.btn.banner-btn'
+      - 'source[media="(min-width:60em)"][srcset="images/banner-l-2x.jpg 2x, images/banner-l.jpg 1x"]'
+      - 'source[media="(min-width:38em)"][srcset="images/banner-m-2x.jpg 2x, images/banner-m.jpg 1x"]'
+      - 'img[srcset="images/banner-s-2x.jpg 2x, images/banner-s.jpg 1x"][src="images/banner-s.jpg"]'
+    search:
+      - 'Maize: cornerstone of culture &amp; spirituality'
+      - 'Corn has played a significant role in empires, civilizations and people for thousands of years—Mayans even having a Maize God.'
+      - 'More about maize'
+
+css:
+  - path: 'css/modules.css'
+    locked: true
+  - path: 'css/type.css'
+    locked: true
+  - path: 'css/main.css'
+    locked: true
